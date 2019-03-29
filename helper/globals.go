@@ -57,7 +57,7 @@ var GormDB *gorm.DB
 func init() {
 	configuration = Configuration{
 		EncryptionKey: "F61L8L7CUCGN0NK6336I8TFP9Y2ZOS43",
-		DbHost:        "localhost",
+		DbHost:        "postgres",
 		DbPort:        "5432",
 		DbName:        "postgres",
 		DbUsername:    "postgres",

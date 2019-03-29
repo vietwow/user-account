@@ -1,7 +1,7 @@
 package models
 
 import (
-	"app1/helper"
+	"github.com/vietwow/user-account/helper"
 	"fmt"
 	"net/http"
 	"strconv"

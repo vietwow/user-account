@@ -42,5 +42,5 @@ func main() {
 	echoGroupNoJWT.POST("/users/login", models.Login)
 
 	defer helper.GormDB.Close()
-	echoFramework.Logger.Fatal(echoFramework.Start(":1323"))
+	echoFramework.Logger.Fatal(echoFramework.Start(":8080"))
 }

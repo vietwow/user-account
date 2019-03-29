@@ -1,0 +1,19 @@
+version: '2'
+services:
+  uac:
+    restart: always
+    build: .
+    image: uac
+    # env_file: ./container1.env
+    # environment:
+    #   - test=abc
+    ports:
+      - "8080:8080"
+    depends_on:
+      - postgres
+
+  postgres:
+    restart: always
+    image: "postgres:9.6.1"
+    expose:
+      - "5432"
